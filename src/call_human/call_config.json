@@ -1,0 +1,31 @@
+{
+  "enabled_channels": ["sms", "email", "internal_dm", "voice_call"],
+  "NOTIFY_CHANNEL": {
+    "low": "email",
+    "moderate": "sms",
+    "high": "voice_call"
+  },
+  "contact_profiles": {
+    "emergency_contact": {
+      "name": "Jane Doe",
+      "channel": "sms",
+      "type": "family",
+      "persona": "warm"
+    },
+    "law_enforcement": {
+      "name": "Scotland Yard",
+      "channel": "email",
+      "type": "law_enforcement",
+      "persona": "formal"
+    }
+  },
+  "custom_headers": {
+    "email": {
+      "family": "To: {User}'s Family\nFrom: {Platform} Escalation\nSubject: Concern\n\nReason: {Reason}"
+    }
+  },
+  "ESCALATION_DISCLAIMER": "I can contact staff, but only if it's triggered by a major escalation.",
+  "ESCALATION_OVERRIDE": false,
+  "PLATFORM_PRIVACY_POLICY": "restrictive",
+  "PLATFORM_NAME": "CompanionAI"
+}
